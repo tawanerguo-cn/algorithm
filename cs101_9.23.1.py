@@ -1,0 +1,6 @@
+n = int(input())
+list_origin = list(range(1,n+1))
+list_n = list(map(int,input().split()))
+list_n.sort()
+print(' '.join(str(i) for i in list_origin if i not in list_n))
+print(' '.join(str(i) for i in list_n if i > n))
